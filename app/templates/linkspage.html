@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+    {% block head %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico" />
+    <link rel="stylesheet" href="/static/foundation.min.css">
+    <link rel="stylesheet" href="/static/foundation.css">
+    <title>Recommndr</title>
+    {% endblock %}
+  </head>
+<body>
+  <div id="content">
+    <div class="row">
+      <div class="large-12 columns">
+          <div class="large-12 columns">
+            <h1><a href="/">Recommndr</a></h1>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="panel">
+              <h3>Here are your recommended links!</h3>
+              <p style='line-height: 1;'><a href = "{{thelink1}}">{{thelink1}}</a></p>
+              <p style='line-height: 1;'><a href = "{{thelink2}}">{{thelink2}}</a></p>
+              <p style='line-height: 1;'><a href = "{{thelink3}}">{{thelink3}}</a></p>
+              <p style='line-height: 1;'><a href = "{{thelink4}}">{{thelink4}}</a></p>
+            </div>
+        </div>
+    </div>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+</body>
